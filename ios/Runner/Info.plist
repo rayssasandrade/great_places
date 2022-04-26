@@ -26,6 +26,12 @@
 	<string>we nedd to take a picture!</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>we nedd to take a picture!</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Need to get your location!</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Need to get your location!</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Need to get your location!</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

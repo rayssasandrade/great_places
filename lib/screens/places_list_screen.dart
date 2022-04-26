@@ -22,9 +22,9 @@ class PlacesListScreen extends StatelessWidget {
         future: Provider.of<GreatPlaces>(context, listen: false).loadPlaces(),
         builder: (ctx, snapshot) => snapshot.connectionState ==
                 ConnectionState.waiting
-            ? const Center(child: CircularProgressIndicator())
+            ? Center(child: CircularProgressIndicator())
             : Consumer<GreatPlaces>(
-                child: const Center(
+                child: Center(
                   child: Text('Nenhum local cadastrado!'),
                 ),
                 builder: (ctx, greatPlaces, ch) => greatPlaces.itemsCount == 0
