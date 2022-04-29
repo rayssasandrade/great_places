@@ -32,14 +32,16 @@ class _MapScreenState extends State<MapScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Selecione...'),
-        actions: <Widget>[
+        actions: [
           if (!widget.isReadonly)
             IconButton(
-              onPressed: _pickedPosition == null ? null : () {
-                Navigator.of(context).pop(_pickedPosition);
-              },
               icon: Icon(Icons.check),
-            ),
+              onPressed: _pickedPosition == null
+                  ? null
+                  : () {
+                      Navigator.of(context).pop(_pickedPosition);
+                    },
+            )
         ],
       ),
       body: GoogleMap(
@@ -51,12 +53,13 @@ class _MapScreenState extends State<MapScreen> {
           zoom: 13,
         ),
         onTap: widget.isReadonly ? null : _selectPosition,
-        markers: _pickedPosition == null
+        markers: (_pickedPosition == null && !widget.isReadonly)
             ? Set()
             : {
                 Marker(
                   markerId: MarkerId('p1'),
-                  position: _pickedPosition!,
+                  position:
+                      _pickedPosition! ?? widget.initialLocation.toLatLng(),
                 ),
               },
       ),
