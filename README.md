@@ -5,18 +5,16 @@
 O projeto é a codificação de um aplicativo de lugares com utilização de recursos nativos como Câmera e Mapas.
 
 ### O app contempla:
-- Tema e estilo
-- Navegação 
-- Provider
-- ChangeNotifierProvider
-- Form
-- Requisições HTTP e API Rest
-- Async/Await
-- ImagePicker
-- Acesso a Câmera
-- uso do SQLite
-- Google Maps
-  
+- Providers;
+- Acesso a câmera Android/IOS;
+- Acesso a localização do dispositivo;
+- Utilização do pacote sqflite para gerir os dados;
+- Configuração e utilização das APIs do Google Maps;
+- Permissões no Android: AndroidManifest.xml;
+- Permissões no IOS: Info.plist e AppDelegate.swift
+- Reverse geocoding para pegar informações a partir de uma posição no mapa;
+- Armazenamento de dados no SQLite.
+
 ### Iniciando...
 
 - `git clone https://github.com/rayssasandrade/great_places.git`
@@ -26,8 +24,8 @@ O projeto é a codificação de um aplicativo de lugares com utilização de rec
 ### Resultado
 
 - Execução do algoritmo 
-
-... em construção ...
+  
+<img src="assets/images/places.png" alt="camera" height="400em" /><img src="/assets/images/details.png" alt="detalhes" height="400em" /><img src="/assets/images/form.jpg" alt="fomrulário" height="400em" /><img src="/assets/images/camera.png" alt="camera" height="400em" /><img src="/assets/images/map.jpg" alt="map" height="400em" /><img src="/assets/images/select.jpg" alt="selecionado" height="400em" />
 
 ### Autor
 
